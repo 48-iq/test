@@ -1,5 +1,5 @@
-
-[
+//это пример ответа списка звонков
+const a = [
   {
     id: "asdfkjsadf123",
     clientTel: "+7 (999) 999 99 99",
@@ -90,4 +90,41 @@
 
     }
   }
-]
+];
+
+//это пример ответа средних показателей
+
+const b = {
+  avg: {
+    processedCallRecords: 100,
+    avgPauseLen: 10,
+    avgMaxPauseLen: 20,
+    avgDuration: 30
+  },
+  days: [   
+    {
+      date: "2021-01-01",
+      hours: [
+        {
+          hour: 12, // 12:00 - 13:00
+          rating: 60,
+          competitions: {
+            contact: 12,
+            effectiveCommunication: 12,
+            presentation: 3,
+            convincingArguments: 12,
+            resultOrientation: 12,
+            initiative: 12,
+            clientOrientation: 3,
+            cpm: 5
+          },
+          processedCallRecords: 100,
+          avgPauseLen: 10,
+          avgMaxPauseLen: 20,
+          avgDuration: 30
+        }
+      ]
+    }
+  ]
+}
+

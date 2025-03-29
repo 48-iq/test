@@ -13,10 +13,9 @@ headers = {
   'Content-Type': 'application/x-www-form-urlencoded',
   'Accept': 'application/json',
   'RqUID': '6904a87d-4909-455d-8b87-33269a26c04e',
-  'Authorization': 'Basic N2Q0Y2Y3MTQtMjZiZS00ZTUxLWFhMDQtM2I0Y2VlNmVmYTg2OjEzMWU4YTIyLTAxNzYtNDVlMi05NjY5LTUyNzEyNmFkMjcwNQ=='
+  'Authorization': ''
 }
 
-authkey = 'Basic N2Q0Y2Y3MTQtMjZiZS00ZTUxLWFhMDQtM2I0Y2VlNmVmYTg2OjEzMWU4YTIyLTAxNzYtNDVlMi05NjY5LTUyNzEyNmFkMjcwNQ=='
 
 response = requests.request("POST", url, headers=headers, data=payload, verify=False)
 print(response.text)

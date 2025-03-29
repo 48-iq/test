@@ -30,8 +30,6 @@ pipe = pipeline(
 audio_path = "./testcall.mp3"
 audio, sr = librosa.load(audio_path, sr=16000) 
 
-dataset = load_dataset("distil-whisper/librispeech_long", "clean", split="validation")
-
 
 result = pipe(audio, return_timestamps=True)
 print(result["text"])
